@@ -26,3 +26,9 @@ const solution = str => {
   parts.push(str.slice(start))
   return parts.join(' ');
 }
+
+//Next challenge
+
+function next(){
+  
+}
