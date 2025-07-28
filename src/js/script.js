@@ -30,5 +30,5 @@ const solution = str => {
 //Next challenge
 
 function next(){
-  
+  //Challenge for the day
 }
