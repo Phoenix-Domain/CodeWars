@@ -29,6 +29,22 @@ const solution = str => {
 
 //Next challenge
 
-function next(){
-  //Challenge for the day
+function anotherOne(){
+  let count = 1;
+  const span = document.querySelector('span');
+  const button = document.querySelector('button');
+
+  span.textContent = localStorage.getItem('Number');
+
+  console.log(span)
+  button.addEventListener('click', () => {
+    span.textContent = `${Number(span.textContent) + 1}`
+
+    localStorage.setItem('Number', span.textContent)
+  })
+
+  
+  
 }
+
+anotherOne()
