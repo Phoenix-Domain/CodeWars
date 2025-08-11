@@ -39,5 +39,3 @@ const noSpaceBefore = inputString.trim()
 
  return num;
 }
-
-console.log(getAge('3 Goodbye'))
