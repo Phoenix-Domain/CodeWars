@@ -29,22 +29,15 @@ const solution = str => {
 
 //Next challenge
 
-function anotherOne(){
-  let count = 1;
-  const span = document.querySelector('span');
-  const button = document.querySelector('button');
 
-  span.textContent = localStorage.getItem('Number');
+function getAge(inputString){
+const noSpaceBefore = inputString.trim()
 
-  console.log(span)
-  button.addEventListener('click', () => {
-    span.textContent = `${Number(span.textContent) + 1}`
+ const firstChar = noSpaceBefore[0];
 
-    localStorage.setItem('Number', span.textContent)
-  })
+ const num = Number(firstChar);
 
-  
-  
+ return num;
 }
 
-anotherOne()
+console.log(getAge('3 Goodbye'))
