@@ -28,6 +28,8 @@ const solution = str => {
 }
 
 //Implement a function that computes the difference between two lists. The function should remove all occurrences of elements from the first list (a) that are present in the second list (b). The order of elements in the first list should be preserved in the result.
+ 
+//6Kyu
 
 /* Examples
 If a = [1, 2] and b = [1], the result should be [2].
@@ -37,14 +39,17 @@ If a = [1, 2, 2, 2, 3] and b = [2], the result should be [1, 3].
 */
 
 function arrDiff(a,b){
-  let aElements;
   
-  b.forEach(x => {
-    aElements = a.filter(element => element !== x);
-    //[1,3]
-  })
+  
+    aElements = a.filter(x => !b.includes(x));
+    
   
   return aElements;
 }
 
 console.log(arrDiff([1, 2, 2, 2, 3], [2,3,4,5]))
+
+function duplicateEncode(word){
+  let splitWord = word.split("");
+   return '';
+}
