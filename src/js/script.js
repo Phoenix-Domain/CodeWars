@@ -37,10 +37,14 @@ If a = [1, 2, 2, 2, 3] and b = [2], the result should be [1, 3].
 */
 
 function arrDiff(a,b){
+  let aElements;
   
-  //create a variable for the element in the second list
-  //loop through the first array
-  //filter the first array
-  //return the filtered array
-
+  b.forEach(x => {
+    aElements = a.filter(element => element !== x);
+    //[1,3]
+  })
+  
+  return aElements;
 }
+
+console.log(arrDiff([1, 2, 2, 2, 3], [2,3,4,5]))
