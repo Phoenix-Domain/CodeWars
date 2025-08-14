@@ -100,7 +100,7 @@ Series:1+
 1
 ​
  +…
- 
+
 You will need to figure out the rule of the series to complete this.
 
 Rules
@@ -115,3 +115,21 @@ n
 1 --> 1 --> "1.00"
 2 --> 1 + 1/4 --> "1.25"
 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57" */
+
+function SeriesSum(n) {
+  if(n === 0){
+    return '0.00'
+  }else{
+        let newVal;
+        let series = [1];
+
+        for(let i = 1; i < n; i++){
+          newVal = (1/(1+(3*i)));
+          series.push(newVal)
+        }
+
+        let sum = series.reduce((acc,cumm) => acc + cumm);
+
+        return String(sum.toFixed(2))
+      }
+}
