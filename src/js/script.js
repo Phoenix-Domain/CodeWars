@@ -27,15 +27,20 @@ const solution = str => {
   return parts.join(' ');
 }
 
-//Next challenge
+//Implement a function that computes the difference between two lists. The function should remove all occurrences of elements from the first list (a) that are present in the second list (b). The order of elements in the first list should be preserved in the result.
 
+/* Examples
+If a = [1, 2] and b = [1], the result should be [2].
 
-function getAge(inputString){
-const noSpaceBefore = inputString.trim()
+If a = [1, 2, 2, 2, 3] and b = [2], the result should be [1, 3].
 
- const firstChar = noSpaceBefore[0];
+*/
 
- const num = Number(firstChar);
+function arrDiff(a,b){
+  
+  //create a variable for the element in the second list
+  //loop through the first array
+  //filter the first array
+  //return the filtered array
 
- return num;
 }
