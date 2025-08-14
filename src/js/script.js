@@ -61,5 +61,21 @@ Examples
 Notes
 Assertion messages may be unclear about what they display in some languages. If you read "...It Should encode XXX", the "XXX" is the expected result, not the input!*/
 function duplicateEncode(word){
-  
+  // change string to lowercase
+  const str = word.toLowerCase();
+  const charCount = {};
+
+  for(char of str){
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+
+  'hello'
+
+ 
+  return Array.from(str).map(x => charCount[x] > 1 ? ')' : '(').join('');
 }
+
+
+console.log(duplicateEncode('din'))
+console.log(duplicateEncode('recede'))
+console.log(duplicateEncode('Success'))
