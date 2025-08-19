@@ -155,6 +155,4 @@ Examples
 26  =>  false
 */
 
-const isSquare = function(n){
-  
-}
+const isSquare = n => Number.isInteger(Math.sqrt(n));
