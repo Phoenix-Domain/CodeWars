@@ -266,3 +266,19 @@ function squareDigits(num){
 // [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
 // [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 
+
+function findOdd(A) {
+  let check = {};
+
+  for (let num of A) {
+    check[num] = (check[num] || 0) + 1;
+  }
+
+  for (let key in check) {
+    if (check[key] % 2 !== 0) {
+      return Number(key); // Convert string key back to number
+    }
+  }
+}
+
+console.log(findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]))
