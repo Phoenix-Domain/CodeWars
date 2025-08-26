@@ -306,5 +306,3 @@ function accum(s) {
 
   return duplicate.join('-')  //join it with a '-' and return
 }
-
-console.log(accum("RqaEzty"))
