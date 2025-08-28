@@ -363,8 +363,3 @@ function tribonacci(signature,n){
   
   return signature
 }
-
-console.log(tribonacci([6,6],0)) //==> [3,2,1,6,9,16,31,56,103,190]
-console.log(tribonacci([0,0,1],1)) //==> [0,0,1,1,2,4,7,13,24,44]
-console.log(tribonacci([0,1,1],10)) //==> [0,1,1,2,4,7,13,24,44,81]
-
