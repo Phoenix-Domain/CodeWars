@@ -376,11 +376,11 @@ function solution2(string) {
   const split = string.split('');
   let result = [];
   //loop through the string
-  split.forEach(x => {
-    if(x === x.toUpperCase()){
+  split.forEach(char => {
+    if(char === char.toUpperCase()){
     result.push(' ')
   }
-  result.push(x)
+  result.push(char)
 })
 
   return result.join('');
