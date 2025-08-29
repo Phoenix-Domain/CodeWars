@@ -376,7 +376,8 @@ function solution2(string) {
   const split = string.split('');
   let result = [];
   //loop through the string
-  split.forEach(x => {if(x === x.toUpperCase()){
+  split.forEach(x => {
+    if(x === x.toUpperCase()){
     result.push(' ')
   }
   result.push(x)
@@ -384,7 +385,3 @@ function solution2(string) {
 
   return result.join('');
 }
-
-console.log(solution2('camelCasing')) //camel Casing
-console.log(solution2('camelCasingTest')) //identifier
-console.log(solution2('')) //''
