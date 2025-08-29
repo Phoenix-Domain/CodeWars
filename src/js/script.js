@@ -363,3 +363,28 @@ function tribonacci(signature,n){
   
   return signature
 }
+
+
+// Complete the solution so that the function will break up camel casing, using a space between words.
+
+// Example
+// "camelCasing"  =>  "camel Casing"
+// "identifier"   =>  "identifier"
+// ""             =>  ""
+
+function solution2(string) {
+  const split = string.split('');
+  let result = [];
+  //loop through the string
+  split.forEach(x => {if(x === x.toUpperCase()){
+    result.push(' ')
+  }
+  result.push(x)
+})
+
+  return result.join('');
+}
+
+console.log(solution2('camelCasing')) //camel Casing
+console.log(solution2('camelCasingTest')) //identifier
+console.log(solution2('')) //''
