@@ -442,9 +442,8 @@ function sumArray(array) {
 // You may assume that the board passed in is valid in the context of a game of Tic-Tac-Toe.
 
 function isSolved(board) {
-  let num;
-  if((board[0][0]))
-
+  let num = 5;
+ //tODO: SOLVE TOMORROW
   return num
 }
 
