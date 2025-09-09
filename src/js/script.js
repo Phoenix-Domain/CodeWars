@@ -433,5 +433,15 @@ With list [20,37,20,21] and number 1, the result would be [20,37,21].
 */
 
 function deleteNth(arr,n){
-  // ...
+  let numCount = {}
+  let result = []
+
+  for(num of arr){
+    numCount[num] = (numCount[num] | 0) + 1;
+
+    if(numCount[num] <= n){
+      result.push(num)
+    }
+  }
+  return result
 }
