@@ -510,5 +510,16 @@ function repeatStr (n, s) {
 
 // For example, when the input is green, output should be yellow.
 
+function updateLight(current) {
+  if(current === 'yellow'){
+    return 'red'
+  }else if(current === 'red'){
+    return 'green'
+  }else {
+    return 'yellow'
+  }
+}
+
+
 
 
