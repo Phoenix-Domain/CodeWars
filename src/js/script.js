@@ -531,4 +531,19 @@ function updateLight(current) {
 
 const areaOrPerimeter = (l , w) => l === w ? l * w : 2 * (l + w)
 
+// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
+// Examples:
+
+// Inputs: "abc", "bc"
+// Output: true
+
+// Inputs: "abc", "d"
+// Output: false
+
+function solution3(str, ending){
+  let split = str.toLowerCase().split('');
+  return split[split.length - 1]
+}
+
+console.log(solution3('abc', 'bc'));
