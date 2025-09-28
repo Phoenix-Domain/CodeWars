@@ -579,5 +579,3 @@ function arithmetic(a, b, operator){
   return eval(`${a}${signs[operator]}${b}`)
 }
 
-console.log(arithmetic(5,2,'multiply'));
-
